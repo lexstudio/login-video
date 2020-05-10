@@ -3,31 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 
     <style>
       body {
         margin: 0;
         background: #AB88FF;
+        font-family: 'Muli', sans-serif;
       }
 
-      header {
+      .header {
         background: #AB88FF;
-        background-color: #21c08b;
         width: 100%;
         height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
       }
 
-      header img {
+      .header__img {
         width: 200px;
         margin-top: 10px;
         margin-left: 10px;
       }
+
+      
+      .header__menu{
+        
+        margin-right: 30px;
+        color: white;
+      }
+
+
+      .header__menu--profile{
+        margin-right: 8px;
+       
+
+        display: flex;
+        align-items: center;
+      }
+
+      .header__menu--profile i{
+        font-size: 40px;
+        margin-right: 10px;
+      }
+
+
+      .header__menu--profile p{
+        margin: 0;
+        padding: 10px 0;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .header__menu ul{
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0 0 0 -14px;
+      }
+
+       .header__menu:hover ul, ul:hover{
+        display: block;
+      }
+
+      .header__menu li{
+        margin: 5px 0;
+      }
+
+      .header__menu li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .header__menu li a:hover{
+        text-decoration: underline;
+      }
+
+      
+
+
     </style>
+    <script src="https://kit.fontawesome.com/20a0fcaf79.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <img src="assets/img/logo-platzi-video-BW2.png" alt="" />
+    <header class="header">
+      <img class="header__img" src="assets/img/logo-platzi-video-BW2.png" alt="" />
+
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <i class="fas fa-user-circle"></i>
+          <p>Perfil</p>
+        </div>
+  
+        <ul>
+          <li><a href="#">Cuenta</a></li>
+          <li><a href="#">Cerrar Sesion</a></li>
+        </ul>
+
+      </div>
+
     </header>
   </body>
 </html>
