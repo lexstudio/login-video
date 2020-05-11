@@ -9,12 +9,12 @@
     <style>
       body {
         margin: 0;
-        background: #AB88FF;
+        background: #8f57fd;
         font-family: 'Muli', sans-serif;
       }
 
       .header {
-        background: #AB88FF;
+        background: #8f57fd;
         width: 100%;
         height: 80px;
         display: flex;
@@ -86,7 +86,30 @@
       }
 
       
+      .main{
+        height: 300px;
+      }
 
+      .main__title{
+        color: white;
+        font-size: 25px;
+      }
+
+      .input{
+        background-color:rgba(255,55,255,0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        width: 60%;
+      }
+
+      ::placeholder{
+        color: white;
+      }
 
     </style>
     <script src="https://kit.fontawesome.com/20a0fcaf79.js" crossorigin="anonymous"></script>
@@ -107,7 +130,12 @@
         </ul>
 
       </div>
-
     </header>
+
+    <section class="main">
+      <h2 class="main__title">Que quieres ver hoy?</h2>
+      <input class="input" type="text" placeholder="Buscar...">
+    </section>
+
   </body>
 </html>
