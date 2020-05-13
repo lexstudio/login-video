@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .header{
+            background: var(--verde);
+        }
+
+        .not-found{
+            background: linear-gradient(var(--verde), var(--morado));
+            font-size: 12em;
+            color: white;
+            margin: 0px  auto;
+            text-align: center;
+            height: 100%;
+            padding: 0px;
+            min-height: calc(100vh -200px);
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+        }
+
+        .not-found__number{
+            margin-bottom: 0;
+        }
+
+
+
+        .not-found__description{
+            font-size: .2em;
+            margin-top: 0;
+            margin-bottom: 6em;
+        }
+
+
+        .text-animated-hinge {
+            text-transform: uppercase;
+            animation-duration: 8.5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            margin: 20px;
+            animation-name: hinge;
+        }
+
+
+        @keyframes hinge {
+            0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+            20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+            40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+            80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+            100% {transform: translateY(700px);}
+        }
+        
+
+        .footer{
+            display: flex;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body style="overflow-y: hidden;">
+    <header class="header">
+        <img class="header__img" src="assets/img/logo-platzi-video-BW2.png" alt="" />
+
+      </header>
+
+      <section class="not-found">
+          <p class="not-found__number text-animated-hinge">404</p>
+          <p class="not-found__description text-animated-hinge">Pagina no encontrada</p>
+      </section>
+
+
+      <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de Ayuda</a>
+    
+    </footer>
+    
+</body>
+</html>
