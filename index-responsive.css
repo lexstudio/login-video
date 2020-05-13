@@ -1,0 +1,40 @@
+@media only screen and (max-width:600px){
+
+
+    .carousel{
+        
+        padding: 10px;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .carousel__container{
+        white-space: normal;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content:center;
+
+        grid-gap: 10px 0;
+        
+    }
+
+    .carousel-item{
+        width: 160px;
+        height: 260px;
+        margin: auto;
+        
+    }
+
+    .carousel-item__img{
+        width: 160px;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+  }
